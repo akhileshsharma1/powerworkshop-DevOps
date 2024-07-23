@@ -1,0 +1,14 @@
+name: PHP console print on push event
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Print Message
+      run: echo "Hello World!"
